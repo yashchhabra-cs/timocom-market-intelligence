@@ -76,7 +76,7 @@ def analyse_company(client, site_data):
     try:
         message = client.messages.create(
             model="claude-sonnet-4-6",
-            max_tokens=1024,
+            max_tokens=2048,
             system=SYSTEM_PROMPT,
             messages=[
                 {
