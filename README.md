@@ -1,12 +1,12 @@
-# TIMOCOM Market Intelligence Tool
+# Market Intelligence Tool
 
-Built as part of the TIMOCOM interview project — an end-to-end market intelligence pipeline that scrapes competitor websites, analyses them using the Claude AI API, and exports structured reports as both Excel and PDF.
+A general-purpose, end-to-end market intelligence pipeline that scrapes competitor websites, analyses them using the Claude AI API, and exports structured reports as both Excel and PDF. Configure any set of target websites by editing the `WEBSITES` list in `scraper.py`.
 
 ---
 
 ## What It Does
 
-1. **Scrapes** the homepages of target logistics/freight companies (Transporeon, Sennder, Cargonexx, FreightWaves) — extracting page titles, meta descriptions, and H1/H2 headings.
+1. **Scrapes** the homepages of target competitor websites — extracting page titles, meta descriptions, and H1/H2 headings.
 2. **Analyses** each company's scraped data one by one using the Claude API, acting as a senior market analyst to produce structured insights.
 3. **Exports** the analysis into two report formats saved to the `output/` folder:
    - `market_intelligence.xlsx` — a styled Excel file with one row per company
@@ -30,7 +30,7 @@ Built as part of the TIMOCOM interview project — an end-to-end market intellig
 ## Project Structure
 
 ```
-timocom-market-intelligence/
+market-intelligence-tool/
 ├── scraper.py        # Scrapes target websites
 ├── processor.py      # Sends scraped data to Claude API and returns analysis
 ├── excel_output.py   # Generates styled Excel report
@@ -47,8 +47,8 @@ timocom-market-intelligence/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yashchhabra-cs/timocom-market-intelligence.git
-   cd timocom-market-intelligence
+   git clone https://github.com/yashchhabra-cs/market-intelligence-tool.git
+   cd market-intelligence-tool
    ```
 
 2. Install dependencies:
